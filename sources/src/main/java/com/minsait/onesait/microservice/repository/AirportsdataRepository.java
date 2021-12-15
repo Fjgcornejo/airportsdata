@@ -10,6 +10,6 @@ import com.minsait.onesait.platform.comms.protocol.enums.SSAPQueryType;
 @IoTBrokerRepository("airportsdata")
 public interface AirportsdataRepository {
 
-	@IoTBrokerQuery(value = "SELECT r FROM airportsdata as r", queryType = SSAPQueryType.SQL)
+	@IoTBrokerQuery(value = "SELECT * FROM airportsdata as r", queryType = SSAPQueryType.SQL)
 	List<AirportsdataWrapper> findAll();
 }
